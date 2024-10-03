@@ -1,0 +1,55 @@
+# OAuth2 Security com Spring Boot
+
+![Java](https://img.shields.io/badge/Java-11%2B-blue?logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7%2B-brightgreen?logo=spring-boot)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-5.6%2B-brightgreen?logo=spring-security&logoColor=white)
+![OAuth2](https://img.shields.io/badge/OAuth2-authorization-red?logo=oauth)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA-Hibernate-orange?logo=hibernate&logoColor=white)
+![Lombok](https://img.shields.io/badge/Lombok-1.18-blue?logo=lombok)
+![Spring Web](https://img.shields.io/badge/Spring%20Web-REST-brightgreen?logo=spring)
+
+## Descrição
+
+Este projeto tem como objetivo explorar a implementação do protocolo OAuth2 para autenticação e autorização de acessos em uma aplicação Spring Boot. O foco está no controle de permissões de usuários, utilizando as seguintes dependências:
+
+- **Spring Security**: Para autenticação e autorização.
+- **MySQL**: Banco de dados para armazenamento de informações dos usuários e permissões.
+- **JPA (Java Persistence API)**: Para mapeamento objeto-relacional.
+- **Lombok**: Para simplificação de código boilerplate.
+- **Spring Web**: Para a criação de endpoints REST.
+
+## Funcionalidades
+
+- Autenticação de usuários utilizando OAuth2.
+- Controle de acessos baseado em permissões.
+- Persistência de dados no banco de dados MySQL.
+- API RESTful para manipulação de usuários e permissões.
+
+## Tecnologias Utilizadas
+
+- Java 11+
+- Spring Boot 2.7+
+- Spring Security
+- OAuth2
+- MySQL
+- JPA (Hibernate)
+- Lombok
+
+## Pré-requisitos
+
+Antes de executar o projeto, certifique-se de ter instalado:
+
+- **JDK 11+**
+- **MySQL** configurado e rodando.
+
+## Configuração do Banco de Dados
+
+No arquivo `application.properties` ou `application.yml`, configure as credenciais do seu banco de dados MySQL:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/nome_do_banco
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+spring.jpa.hibernate.ddl-auto=update
+```
